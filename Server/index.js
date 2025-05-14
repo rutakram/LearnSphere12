@@ -27,7 +27,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
     "http://localhost:3000", 
-    "https://studynotion-frontend-olive-sigma.vercel.app"
+    "https://learn-sphere12-f.vercel.app/"
   ];
 
   app.use(cors({
@@ -71,4 +71,4 @@ app.listen(PORT,()=>{
 
 
 
-
+// "https://studynotion-frontend-olive-sigma.vercel.app"
