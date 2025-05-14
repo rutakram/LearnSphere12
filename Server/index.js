@@ -8,7 +8,7 @@ const courseRoutes = require("./routes/Course");
 const contactRoutes = require("./routes/Contact");
 
 const cookieParser = require("cookie-parser");
-
+const cors = require("cors");
 
 
 const {cloudinaryConnect} = require("./config/cloudinary");
@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 4000;
 
 const database=require("./config/database");
 database.connect();
-app.use(cors());
+
 app.use(express.json());
 app.use(cookieParser());
 
@@ -69,6 +69,3 @@ app.listen(PORT,()=>{
     console.log(`Port is running at ${PORT}`)
 })
 
-
-
-// "https://studynotion-frontend-olive-sigma.vercel.app"
