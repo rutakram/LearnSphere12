@@ -27,7 +27,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
     "http://localhost:3000", 
-    "https://learn-sphere12-f.vercel.app/"
+    "https://learn-sphere12-uzvjev1nx-rutaks-projects-f0b53384.vercel.app/"
   ];
 
   app.use(cors({
