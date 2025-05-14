@@ -1,6 +1,6 @@
 const express=require("express");
 const app=express();
-
+const cors = require('cors');
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
 const paymentRoutes = require("./routes/Payments");
@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 4000;
 
 const database=require("./config/database");
 database.connect();
-
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
