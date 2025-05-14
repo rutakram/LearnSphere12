@@ -1,6 +1,6 @@
 const express=require("express");
 const app=express();
-const cors = require('cors');
+
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
 const paymentRoutes = require("./routes/Payments");
@@ -8,7 +8,7 @@ const courseRoutes = require("./routes/Course");
 const contactRoutes = require("./routes/Contact");
 
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
+
 
 
 const {cloudinaryConnect} = require("./config/cloudinary");
